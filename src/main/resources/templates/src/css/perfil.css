@@ -1,0 +1,127 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.portada{
+    position: absolute;
+    top: 0;
+    background-image: url("../image/fondo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+}
+.trans{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.692);
+}
+.c-date{
+    padding: 30px;
+    z-index: 1;
+    width: 70%;
+}
+.name{
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    font-size: .8em;
+    justify-content: space-between;
+    align-items: center;
+}
+.data{
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+.image{
+    width: 30%;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info{
+    width: 70%;
+    position: relative;
+}
+.data image, .info{
+    height: 300px;
+}
+
+button{
+    background: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+    width: 160px;
+    height: 40px;
+}
+
+button:hover{
+    background: #fff;
+    color: gray;
+}
+.s-info{
+    padding: 20px 40px;
+}
+.barra{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px !important;
+    background: #e50247;
+}
+.header{
+    height: 60px !important;
+    display: flex;
+    align-items: center;
+    color: #e50247;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 0 40px;
+    border-bottom: 1.3px solid #d8d4d5bb;
+}
+.rows{
+    display: flex;
+    align-items: center;
+    height: 1.9rem !important;
+}
+.rows .span{
+    width: 100px;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+}
+.pago{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+.b-pago{
+    color: #e50247;
+    border: 1px solid #e50247;    
+}
+.b-pago:hover{
+    background: #e50247;
+    color: #fff;
+}
+
+.paypal{
+    Width:160px !important;
+    position: absolute !important;
+    margin:50px !important;
+    top:50px !important;
+    right: 20px !important;
+}

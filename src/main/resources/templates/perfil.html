@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/perfil.css">
+</head>
+<body class="container">
+    <div class="portada">        
+    </div>
+    <div class="trans"> </div>
+    <section class="c-date">
+        <div class="name">
+            <h1>Bienvenido Alumno(a) <br> <strong>Angel Manuel Cabana Herrera</strong></h1>
+            <div>
+                <form action="login/logout" method="post">
+                    <button type="submit" value="submit">Cerrar Sesion</button>
+                </form>
+            </div>
+        </div>
+        <div class="data">
+            <div class="image">
+                <img src="src/image/perfil-usuario.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="header">Informacion Personal</div>
+                <div class="s-info">
+                    <div class="rows">
+                        <div class="span">APELLIDOS: </div>
+                        <div>CABANA HERRERA</div>
+                    </div>
+                    <div class="rows">
+                        <div class="span">NOMBRES: </div>
+                        <div>ANGEL MANUEL</div>
+                    </div>
+                    <div class="rows">
+                        <div class="span">NIVEL: </div>
+                        <div>PRIMARIA</div>
+                    </div>
+                    <div class="rows">
+                        <div class="span">GRADO: </div>
+                        <div>SEGUNDO</div>
+                    </div>
+                    <div class="rows">
+                        <div class="span">SECCION: </div>
+                        <div>A</div>
+                    </div>
+                    <div class="rows">
+                        <div class="span">TURNO: </div>
+                        <div>MAÑADA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="barra"></div>
+            <div class="pago">
+                <div class="paypal" >
+                    <script src="https://www.paypal.com/sdk/js?client-id=Ac7o6SewcF8m7Fof2KdT-lilDGAht_HcoATZMsjp5xIXlE43dGJ6ekcwElsAwj43iEYy-Mp4LAnYEkYR"></script>
+                    <script>
+                        paypal.Buttons({
+                            Style:{
+                            },
+                            createOrder:function(data,actions){
+                                return actions.order.create({
+                                    purchase_units:[{
+                                        amount:{
+                                            value:'70'
+                                        }
+                                    }]
+                                });
+                            },
+                            OnApprove: function(data, actions){
+                                return actions.order.capture().then(
+                                    function(details){
+                                        console.log(details);
+                                    }
+                                )
+                            }
+                        }).render('.paypal')
+                    </script>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body{
+height: 100%; 
+font-family: 'Noto Sans', sans-serif;
+}
+
+.contact_form{  
+width: 460px; 
+height: auto;
+margin: 20px auto;
+border-radius: 10px;  
+padding-top: 5px;
+padding-bottom: 20px;  
+background-color: #fbfbfb; 
+padding-left: 30px; 
+}
+
+
+input, select{
+background-color: #fbfbfb; 
+width: 408px !important; 
+height: 32px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: #e50247; 
+margin-top: 10px;  
+padding-left: 10px;
+}
+select{
+    width: 422px !important;
+}
+label{
+display: block; 
+float: center;  
+}
+
+button, a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #e50247; 
+    border-color: #e50247; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 200px;   
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+button p{
+color: #fff; 
+}
+
+span{
+color: #e50247; 
+}
+
+.aviso{
+font-size: 13px;  
+color: #0e0e0e;  
+}
+h3{
+    font-size: 1em;
+    text-align: center;
+    margin-right: 40px;
+    padding: 10px;
+    color: #e50247;
+    border: 1px solid #e50247;
+
+}
+h1{
+font-size: 36px;  
+text-align: letf; 
+color: #e50247;
+}
+
+p{
+font-size: 14px; 
+color: #0e0e0e; 
+}
+
+
+.formulario input:focus{
+outline:0;
+border: 1px solid #97d848;
+}
+
+.formulario textarea:focus{
+outline:0;
+border: 1px solid #97d848;
+}
+.end{
+    gap: 10px;
+    display: flex;
+}

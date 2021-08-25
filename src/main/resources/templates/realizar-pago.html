@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pago</title>  
+    <link rel="stylesheet" href="src/css/pago.css">
+  </head>
+<body>  
+  <div class="contact_form">
+    <div class="formulario">      
+        <h1>Realizar Pago</h1>
+          <form >                   
+                <p>
+                  <label for="tarjeta" class="colocar_nombre">Tarjeta
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <select type="text" name="tarjeta" id="tarjeta" required="obligatorio" placeholder="Escribe tu nombre">
+                      <option value="BCP">BCP</option>
+                      <option value="INTERBANK">INTERBANK</option>
+                      <option value="PAYPAL">PAYPAL</option>
+                    </select>
+                </p>              
+                <p>
+                  <label for="num_tarjeta" >Numero de Tarjeta
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="number" name="num_tarjeta" required="obligatorio" >
+                </p>            
+                <p>
+                  <label for="fecha" class="fecha">Fecha de Vencimiento
+                  </label>
+                    <input type="text" name="fecha">
+                </p>                  
+                <p>
+                  <label for="codigo" class="codigo">Codigo de Seguridad
+                  </label>
+                    <input type="password" name="codigo" >
+                </p>                 
+                <div class="end">
+                  <a href="#">Anterior</a>
+                  <button type="submit"><p>Finalizar</p></button>
+                </div>
+                
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>                     
+          </form>
+          <h3>IMPORTE: <strong>500</strong></h3>
+    </div>  
+  </div>
+</body>
+</html>

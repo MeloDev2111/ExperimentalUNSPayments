@@ -1,0 +1,72 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../image/fondo.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.trans{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.425);
+
+}
+.presentation{
+    background: rgba(255, 255, 255, 0.836);
+    padding: 110px 0px;
+    border-radius: 20px;
+    width: 50%;
+}
+.sect-title{
+    color: #d82f4b;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.sect-title h1{font-size: 2.2em;}
+.sect-title p {
+    font-size: 1.2em;
+    color: rgb(163, 159, 159);
+}
+
+.sect-button{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.sect-button button{
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 300px;
+    height: 50px;
+    color: #928686;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: inset 0 2px 6px rgba(0,0,0,.3);
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background: rgb(245, 242, 242);
+    border-radius: 50px;
+}
+.sect-button button:hover{
+    color: #706767;
+}
+.sect-desc{
+    font-size: 1em;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    padding: 0 10%;
+}
+.logo{
+    height: 160px;
+    padding-top: 20px;
+    text-align: center;
+}
